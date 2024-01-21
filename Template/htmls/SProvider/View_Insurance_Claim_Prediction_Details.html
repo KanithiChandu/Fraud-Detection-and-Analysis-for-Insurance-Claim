@@ -1,0 +1,129 @@
+{% extends 'SProvider/design1.html' %}
+{% block researchblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 1050px;
+    height: 500px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style6 {color: #FFFF00; font-weight: bold; }
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+<p class="text-uppercase pull-center style1">View All Insurance Claim Prediction Details !!! </p>
+			<div class="row">
+				<div class="col-md-5">
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset class="tweettext">
+
+                            <hr>
+                            <div class="tweettext">
+                               <table border="5" bordercolor="#FF00FF">
+                      <tr>
+
+                          <td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">Account_Code</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">DATE_OF_INTIMATION</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">DATE_OF_ACCIDENT</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">CLAIM_Real</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">AGE</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">TYPE</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">DRIVING_LICENSE_ISSUE</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">BODY_TYPE</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">MAKE</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">MODEL</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">YEAR</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">CHASIS_Real</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">REG</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">SUM_INSURED</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">POLICY_NO</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">POLICY_START</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">POLICY_END</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">INTIMATED_AMOUNT</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">INTIMATED_SF</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">EXECUTIVE</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">PRODUCT</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">POLICYTYPE</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">NATIONALITY</span></div></td>
+<td bgcolor="#FF0000"><div align="center" class="style6"><span class="style8">PREDICTION</span></div></td>
+
+
+                      </tr>
+                            {% for object in objs %}
+                      <tr>
+                          <td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.Account_Code}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.DATE_OF_INTIMATION}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.DATE_OF_ACCIDENT}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.CLAIM_Real}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.AGE}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.TYPE}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.DRIVING_LICENSE_ISSUE}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.BODY_TYPE}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.MAKE}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.MODEL}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.YEAR}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.CHASIS_Real}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.REG}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.SUM_INSURED}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.POLICY_NO}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.POLICY_START}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.POLICY_END}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.INTIMATED_AMOUNT}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.INTIMATED_SF}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.EXECUTIVE}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.PRODUCT}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.POLICYTYPE}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.NATIONALITY}}</div></td>
+<td bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{object.PREDICTION}}</div></td>
+
+
+
+                                 </tr>
+
+                                        {% endfor %}
+                      </table>
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>

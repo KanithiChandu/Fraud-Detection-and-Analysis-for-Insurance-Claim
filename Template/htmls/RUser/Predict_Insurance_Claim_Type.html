@@ -1,0 +1,239 @@
+{% extends 'RUser/design.html' %}
+{% block userblock %}
+
+
+<link rel="icon" href="images/icon.png" type="image/x-icon" />
+
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+
+
+		<style>
+			body {background-color:#000000;}
+			.container-fluid {padding:50px;}
+			.container{background-color:white;padding:50px;   }
+			#title{font-family: 'Fredoka One', cursive;
+}
+			.text-uppercase{
+			font-family: 'Righteous', cursive;
+
+			}
+			.tweettext{
+
+    border: 2px solid yellowgreen;
+    width: 1104px;
+    height: 100px;
+    overflow: scroll;
+    background-color:;
+}
+		.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style4 {color: #FFFF00; font-weight: bold; }
+        .style6 {
+	color: #FFFF00;
+	font-weight: bold;
+	font-style: italic;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+        </style>
+
+	<body>
+	<div class="container-fluid">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-5">
+
+                  
+                   <form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+							<p class="text-uppercase pull-center style1"> PREDICTION OF INSURANCE CLAIM TYPE!!! </p>
+                            <hr>
+
+                                {% csrf_token %}
+                                <table width="1144" border="0" align="center">
+                                  
+                                  <tr>
+                                    <td height="44" colspan="4" bgcolor="#FF0000"><div align="center"><span class="style6">FEED ALL INSURANCE CLAIM DETAILS HERE !!!</span> </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td width="314" height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter ACCOUNT_CODE</span></div></td>
+                                    <td width="272"><div align="center">
+                                      <input type="text" name="Account_Code">
+                                    </div></td>
+                                    <td width="282" bgcolor="#FF0000"><div align="center" class="style4">Enter DATE_OF_INTIMATION</div></td>
+                                    <td width="256"><div align="center">
+                                      <input type="text" name="DATE_OF_INTIMATION">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter DATE_OF_ACCIDENT</span></div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="DATE_OF_ACCIDENT">
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter CLAIM_Real</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="CLAIM_Real">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter AGE</span></div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="AGE">
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter TYPE</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="TYPE">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter DRIVING_LICENSE_ISSUE</span></div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="DRIVING_LICENSE_ISSUE">
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter BODY_TYPE</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="BODY_TYPE">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter MAKE</span><span class="style4"></span> </div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="MAKE">
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter MODEL</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="MODEL">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter YEAR</span></div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="YEAR">
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter CHASIS_Real</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="CHASIS_Real">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">Enter REGISTRATION COUNTRY </div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="REG">
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center"><span class="style4 style2">Enter SUM_INSURED</span></div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="SUM_INSURED">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center"><span class="style4">Enter POLICY_NO</span></div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="POLICY_NO" >
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4"><span class="style2">Enter</span> POLICY_START</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="POLICY_START">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">
+                                      <div align="center">Enter POLICY_END</div>
+                                    </div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="POLICY_END" >
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4"><span class="style2">Enter</span> INTIMATED_AMOUNT</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="INTIMATED_AMOUNT">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">
+                                      <div align="center">Enter INTIMATED_SF</div>
+                                    </div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="INTIMATED_SF" >
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4"><span class="style2">Enter</span> EXECUTIVE</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="EXECUTIVE">
+                                    </div></td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">
+                                      <div align="center">Enter PRODUCT</div>
+                                    </div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="PRODUCT" >
+                                    </div></td>
+                                    <td bgcolor="#FF0000"><div align="center" class="style4">Enter POLICY TYPE</div></td>
+                                    <td><div align="center">
+                                      <input type="text" name="POLICYTYPE">
+                                    </div></td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000"><div align="center" class="style4">
+                                      <div align="center" class="style4">Enter NATIONALITY</div>
+                                    </div></td>
+                                    <td bgcolor="#FFFFFF"><div align="center">
+                                      <input type="text" name="NATIONALITY" >
+                                    </div></td>
+                                    <td bgcolor="#FF0000">&nbsp;</td>
+                                    <td bgcolor="#FFFFFF">&nbsp;</td>
+                                  </tr>
+                                  <tr>
+                                    <td height="44" bgcolor="#FF0000">&nbsp;</td>
+                                    <td bgcolor="#FF0000">&nbsp;</td>
+                                    <td bgcolor="#FF0000"><input name="submit" type="submit" class="style1" value="Predict"></td>
+                                    <td bgcolor="#FF0000">&nbsp;</td>
+                                  </tr>
+  <td><p>&nbsp;</p>          </td>
+  </tr>
+                        </table>
+					 </fieldset>
+				  </form>
+
+
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+
+                            <hr>
+                            <div>
+                               <table border="5" align="center" bordercolor="#FF00FF">
+                             <tr><td width="328" bgcolor="#FF0000"><div align="center"><span class="style4"><strong>PREDICTED INSURANCE CLAIM TYPE  :: </strong></span></div></td>
+
+                     
+
+<td width="275" height="68" bgcolor="#FFFFFF" style="color:red; font-size:20px; font-family:fantasy" ><div align="center">{{objs}}</div></td>
+
+                        </tr>
+
+
+                      </table>
+
+
+                            </div>
+
+
+
+
+						</fieldset>
+					</form>
+				</div>
+
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    <tr>
